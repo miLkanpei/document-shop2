@@ -1,0 +1,34 @@
+@import '../utility//mixin';
+
+.c-search-sidebar{
+    max-width: 200px;
+    height: 200vh;
+    background-color: #D8DBE0;
+
+    &-font{
+      @include fontRoboto();
+    }
+
+    &-search-btn{
+      @include fontRoboto($color:#FFFFFF);
+      @include themeColor();
+      width: 127px;
+      height: 40px;
+    }
+
+    &-filtering-btn{
+      @include fontRoboto($color:#FFFFFF);
+      @include themeColor($background:#63C2DE,$border_radius:4px);
+      width: 127px;
+      height: 35px;
+      margin: 16px 0 16px 0;
+    }
+
+    &-reset-btn{
+      @include fontRoboto($color:#4F5D73);
+      @include themeColor($background:#C8CED3,$border_radius:4px);
+      width: 77px;
+      height: 35px;
+    }
+
+}

@@ -1,0 +1,18 @@
+@import '../utility//mixin';
+
+.new_edition_bulk_editing {
+
+  &-margin {
+    margin: 0px 31px 60px 17px;
+  }
+
+  &-check-box {
+    @include fontRoboto($color:#4F5D73);
+    text-align: left !important;
+  }
+
+  &-text-area {
+    width: 734px;
+    margin-left: 14px;
+  }
+}

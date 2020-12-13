@@ -1,0 +1,49 @@
+@import '../utility//mixin';
+
+.modal {
+    &-container{
+      position: relative;
+      display: flex;
+
+      &-label {
+        @include fontRoboto($fweight:bold,$color:#23282C);
+        width: 82px;
+        text-align: left;
+      }
+
+      &-font {
+        @include fontRoboto();
+        width: 82px;
+        text-align: left;
+        padding-top: 3px; 
+      }
+
+      &-box {
+        width: 138px;
+        height: 95px;
+        margin-right: 81px;
+        margin-left: 15px;
+      }
+
+    }
+
+    &-label {
+      @include fontRoboto($fweight:bold,$color:#23282C);
+      margin-left: 17px;
+      width: 82px;
+      text-align: left;
+    }
+
+    &-col {
+        margin-left: 35px;
+        flex: 0 0 8.3333333333%;
+        max-width: 8.3333333333%;
+    }
+
+    &-checkbox {
+      @include fontRoboto($color:#4F5D73);
+      text-align: left !important;
+      margin-left: 20px;
+    }
+
+}

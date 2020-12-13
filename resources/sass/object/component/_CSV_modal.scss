@@ -1,0 +1,47 @@
+@import '../utility//mixin';
+
+.csv_modal {
+
+  &-container {
+      margin-bottom: 32px;
+      display: flex;
+  }
+
+  &-label {
+    @include fontRoboto($fweight:bold,$color:#23282C);
+    margin-left: 17px;
+    margin-right: 36px;
+    width: 162px;
+    text-align: left;
+  }
+
+  &-sum-font{
+    @include fontRoboto($color:#4F5D73,$fsize:14px);
+    margin-left: 17px;
+    margin-bottom: 32px;
+  }
+
+  &-select-format {
+    @include fontRoboto($color:#4F5D73,$fsize:14px);
+    height: 33px;
+    width: 317px;
+  }
+
+  &-check-box {
+    @include fontRoboto($color:#4F5D73,$fsize:14px);
+    margin-left: 50px;
+    margin-right: 117px;
+    height: 17px;
+    width: 151px;
+  }
+
+  &-download-btn {
+    @include fontRoboto($color:#FFFFFF,$fsize:14px);
+    @include themeColor($background: #20A8D8);
+    margin-right: 20px;
+    height: 35px;
+    width: 116px;
+  }
+
+
+}

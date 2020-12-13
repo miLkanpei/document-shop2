@@ -1,0 +1,41 @@
+@import '../utility//mixin';
+
+.button-list {
+
+    &-container {
+      display: flex;
+      position: relative;
+      left: 770px;
+    }
+
+    &-center-margin {
+      padding : 0px 10px 0px 10px;
+    }
+
+    &-btn-margin {
+      display: flex;
+      margin: 0 0 0 auto;
+    }
+
+  &-header {
+
+    &-text {
+      margin-top: 7px;
+    }
+
+    &-container {
+      margin-top: 16px;
+      position: relative;
+      display: flex;
+    }
+
+    &-btns{
+      margin-left: 16px;
+      width: 174px;
+      height: 32px;
+      color: #FFFFFF !important;
+      @include themeColor($background:#20A8D8,$border_radius:4px);
+      @include fontRoboto();
+    }
+  }
+}
