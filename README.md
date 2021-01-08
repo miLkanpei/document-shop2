@@ -1,88 +1,47 @@
-# 環境構築
 
-## git clone
-git clone https://github.com/KenOsone/kindest_admin.git
+<h3 align="center">[ Shop EC ]</h3>
 
+## Description
+<p>
+カートシステムと掲載システムを連動したフルスクラッチシステム/br>
+ロジシステムと連携しECサイトの運用を行う
+</p>
 
-## composerインストール（v1.8.5を落として下さい）
-curl -sS https://getcomposer.org/installer | php -- --version=1.8.5 <br>
-sudo mv composer.phar /usr/bin/composer <br>
-参考： <br>
-https://yoshinorin.net/2017/07/15/update-php-composer/ <br>
+<h4 align="center">- Cart ＆ Posting System Technology-</h4> 
+<p align="center">
+<img width="30%" height="200px" alt="React" src="https://user-images.githubusercontent.com/73631392/103876070-89ebe280-5116-11eb-8ae9-83217bab8cea.png">
+    
+<img width="30%" height="200px" alt="Laravel" src="https://user-images.githubusercontent.com/73631392/103876021-7771a900-5116-11eb-911d-439b02ae1756.png">  
+</p>
 
+<h4 align="center"> ＆ </h4>
+<h4 align="center">- logistics System-</h4> 
+<p align="center">
+<img width="30%" height="200px" alt="logiress" src="https://user-images.githubusercontent.com/73631392/103877340-42feec80-5118-11eb-8322-fd6943517974.png">
+</p>
 
-## phpインストール(v7.4を落として下さい)
-brew install php@7.4 <br>
-参考：　<br>
-https://pointsandlines.jp/server-side/php/phpbrew
+## Environment
+<h4> GIT CLONE </h4>
+`$ git clone https://github.com/KenOsone/kindest_admin.git`
 
+<h4> COMPOSER INSTALL (※use v1.8.5)</h4>
+`$curl -sS https://getcomposer.org/installer | php -- --version=1.8.5`
+`$sudo mv composer.phar /usr/bin/composer`
+<a href="https://yoshinorin.net/2017/07/15/update-php-composer/">Reference</a>
 
-## .env作成
+<h4> PHP INSTALL (※use v7.4)</h4>
+`$brew install php@7.4`
+<a href="https://pointsandlines.jp/server-side/php/phpbrew">Reference</a>
+
+<h4> .env CREATE </h4>
 .env sampleがあるので命名を直してあげて下さい
 
 
-## コマンド流れ作業
-
-- npm install
-- composer update
-- npm run watch
-- php artisan serve
-
-
-
-# AWS
-
-## 鍵ファイルをsshフォルダに移動
-mv kanri.pem ~/.ssh/
-
-
-## サーバーにssh接続
-ssh -i  ~/.ssh/kanri.pem ec2-user@52.196.72.210 -p22
-
-
-## スーパーユーザー化
-sudo su -  
-r2qKdsT5urCA
-
-
-## サーバー起動
-sudo systemctl start httpd
-
-
-## ステータス確認
-sudo systemctl status httpd
-
-
-## publicDNS
-ec2-54-250-147-211.ap-northeast-1.compute.amazonaws.com
-
-
-## php-fpm再起動
-sudo systemctl restart php-fpm
-
-##httpd再起動
-sudo systemctl restart httpd
-
-
-## virtual host設定ファイルディレクトリ
-cd /etc/httpd/conf.d/
-
-
-## virtual host設定
-sudo vim vhost.conf
-
-
-## apache構文チェック
-apachectl configtest
-
-
-## アプリの場所
-/var/www/html/
-
-
-## VScodeでSSH接続
-remote sshオススメ
-
+## Startup Command
+`$npm install`<br>
+`$composer update`<br>
+`$npm run watch`<br>
+`$php artisan serve`<br>
 
 
 # フロント周り
